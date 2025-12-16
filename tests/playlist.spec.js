@@ -15,7 +15,7 @@ test.describe('UI Playlist tests', () => {
         await playList.searchInput.fill(expectedTrack);
 
         await expect(playList.tracks, 'Playlist contains exactly one track').toHaveCount(1);
-        await expect(playList.tracks, `Your Playlist contains expected track: "${expectedTrack}"`).toContainText(expectedTrack);
+        await expect(playList.tracks, `Playlist contains expected track: "${expectedTrack}"`).toContainText(expectedTrack);
     });
 
     test('[ID-2] Add Track Using "+" Button', async () => {
